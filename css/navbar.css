@@ -1,26 +1,20 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 header {
-	background-color: #333;
+	background-color: #fff;
 	overflow: hidden;
 }
 
 header h1 {
 	float: left;
-	color: white;
+	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 24px;
 }
-
 
 header nav a {
 	float: left;
-	color: white;
+	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	margin-left: 16px;
@@ -28,13 +22,11 @@ header nav a {
 	text-decoration: none;
 }
 
-
-
 header nav a:hover {
 	background-color: #ddd;
 	color: black;
 }
-header nav{
+
+header nav {
 	float: right;
 }
-
