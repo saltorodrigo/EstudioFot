@@ -9,7 +9,7 @@ header {
 	overflow: hidden;
 }
 
-header h1 {
+header a {
 	float: left;
 	color: white;
 	text-align: center;
