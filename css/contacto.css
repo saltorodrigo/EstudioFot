@@ -114,12 +114,27 @@
 }
 
 .mapa{
-	background-color: rgb(128, 128, 128);
+	/* background-color: rgb(212, 212, 212); */
 	width: 80%;
 	height: 300px;
 	margin: auto;
 	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.texto-mapa{
+	display: flex;
+	background-color: rgba(0, 0, 255, 0.5);
+	width: 80%;
+	height: 40px;
+	margin: auto;
+	margin-top: 0;
 	margin-bottom: 40px;
+	color: #fff;
+}
+
+.texto-mapa p{
+	margin: auto;
 }
 
 .divisor{
@@ -135,10 +150,10 @@
 
 .cont-datos {
 	width: 80%;
-	height: 200px;
+	height: 180px;
 	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
