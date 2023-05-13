@@ -46,6 +46,7 @@
 
 .item {
 	margin: auto;
+	margin-top: 100px;
 	width: 40%;
 }
 
@@ -111,3 +112,24 @@
 	border-radius: 5px;
 	cursor: pointer;
 }
+
+.mapa{
+	background-color: rgb(128, 128, 128);
+	width: 80%;
+	height: 300px;
+	margin: auto;
+	margin-top: 0;
+}
+
+.divisor{
+	background-color: rgba(0, 0, 255, 0.5);
+	height: 2px;
+	width: 80%;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.cont-datos{
+	display: flex;
+}
+
