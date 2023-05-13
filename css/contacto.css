@@ -93,7 +93,7 @@
 	background-color: transparent;
 	border-bottom: 1px solid #b3b3b3;
 	font-size: large;
-	height: 200px;
+	height: 250px;
 	transition: border-bottom 0.3s linear;
 
 }
@@ -119,6 +119,7 @@
 	height: 300px;
 	margin: auto;
 	margin-top: 0;
+	margin-bottom: 40px;
 }
 
 .divisor{
@@ -126,10 +127,54 @@
 	height: 2px;
 	width: 80%;
 	margin: auto;
-	margin-top: 40px;
 }
 
 .cont-datos{
 	display: flex;
+}
+
+.cont-datos {
+	width: 80%;
+	height: 200px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items:start
+}
+
+.cont-datos h2{
+	margin: 0;
+}
+
+.cont-datos h3{
+	font-weight: normal;
+	color:#8a8a8a ;
+	text-decoration: none;
+	
+}
+
+
+.cont-datos-info{
+	display: flex;
+	flex-direction: row;
+
+
+}
+
+#my-icon-mail{
+	font-size:40px;
+	color: rgba(0, 0, 255, 0.5);
+	margin-right: 30px;
+	
+}
+
+#my-icon-phone{
+	font-size:40px;
+	color: rgba(0, 0, 255, 0.5);
+	margin-right: 30px;
 }
 
