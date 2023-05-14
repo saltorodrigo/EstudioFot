@@ -24,10 +24,11 @@
 			map = new Microsoft.Maps.Map('#myMap', {
 				credentials: 'AryB22uQp_UX2HH8uvsBIeFuCn2MF0Db0qNpWJcYD0wQcpFxYOUD4bgWlh6JOlKc',
 				center: new Microsoft.Maps.Location(-28.5372, -57.1714),
-				zoom: 12
+				zoom: 12,
 			});
 		}
 	</script>
+	<script src="../js/validar.js"></script>
 
 	<title>EstudioFot</title>
 </head>
@@ -61,12 +62,17 @@
 			<h2>CONTACTO</h2>
 			<p>Nuestras oficinas se encuentran ubicadas a las afueras de la provincia de Corrientes, lugar estratégico a
 				la hora de paisajes para realizar sesiones fotográficas. </p>
-			<form id="formulario" method="post">
+			<form id="myForm" onsubmit="return validateForm()">
 				<div class="contenedor-input">
-					<input class="input-normal" placeholder="Nombre completo *" type="text" id="nombre" name="nombre">
-					<input class="input-normal" placeholder="Email *" type="email" id="correo" name="correo">
+					<input class="input-normal" placeholder="Nombre completo *" type="text" id="name" name="name">
+
+					<input class="input-normal" placeholder="Email *" type="email" id="email" name="email">
+					<span id="name-error" class="error"></span>
+					<span id="email-error" class="error"></span>
+					<input class="input-normal" placeholder="Teléfono *" type="text" id="phone" name="phone">
 					<input class="input-normal" placeholder="Empresa" type="text" id="empresa" name="empresa">
-					<input class="input-normal" placeholder="Teléfono *" type="text" id="tel" name="tel">
+			
+					<span id="phone-error" class="error"></span>
 				</div>
 
 				<textarea class="mensaje" placeholder="Tu mensaje" id="mensaje" name="mensaje"></textarea>
@@ -75,8 +81,10 @@
 			</form>
 		</div>
 		<div class="item">
-				<div id='myMap' class="mapa"></div>
-				<div class="texto-mapa"><p>Colonia Carlos Pellegrini, Corrientes</p></div>
+			<div id='myMap' class="mapa"></div>
+			<div class="texto-mapa">
+				<p>Colonia Carlos Pellegrini, Corrientes</p>
+			</div>
 			<div class="divisor"></div>
 			<div class="cont-datos">
 				<div class="cont-datos-info">
