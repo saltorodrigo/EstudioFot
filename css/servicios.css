@@ -1,46 +1,145 @@
-* {
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	top: 0;
+	left: 0;
+	background-image: url('C:\Users\Emanuel Salto\Documents\02-FACULTAD\Codo a Codo\TPO\EstudioFot\.img\vecteezy_speed-motion-car-on-road-at-night-with-long-exposure_20495441_64.jpg');
+	background-position: center;
+	background-size: cover;
 }
 
-header {
-	background-color: #333;
+.blue-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 255, 0.5);
+}
+
+.contenedor-texto {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 1;
+}
+
+*{
+    margin:0;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+	
+}
+
+.carrousel{
+    /*width: 100%;
+	height: 100%;*/
+	margin:40px;
+    padding: 0px 0px 0px 0px;
+	/*justify-content: center;
+	justify-items: center;
+	align-content: center;*/
+}
+
+.conteCarrousel{
+    width: 100%;
+	height: 510px;
+    justify-content: center;
+	justify-items: center;
+	align-items: center;
 	overflow: hidden;
 }
 
-header h1 {
-	float: left;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 16px;
+.itemCarrousel{
+    position: relative;
+	display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*left: calc(50% - 100%/2 + 1.53%);
+    top: calc(50% - 510px/2 + 163px);*/
 }
 
-
-header nav a {
-	float: left;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	margin-left: 16px;
-	margin-right: 16px;
-	text-decoration: none;
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;	
 }
 
-
-
-header nav a:hover {
-	background-color: #ddd;
-	color: black;
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
 }
 
-header nav {
-	float: right;
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
 }
 
-body {
-	max-width: 100%;
-	margin: 0;
+#itemCarrousel-1{
+    background-color: rgb(226, 50, 50);
+	/*width: 100%;
+    height: 100%;*/
+	/*padding: 20%;*/
+    /*left: calc(50% - 1310px/2 + 20px);
+    top: calc(50% - 510px/2 + 163px);*/
+		border-radius: 30px;
+}
+
+#itemCarrousel-2{
+    background-color: rgb(50, 200, 226);
+	border-radius: 30px;
+}
+
+#itemCarrousel-3{
+    background-color: rgb(200, 226, 50);
+	border-radius: 30px;
+}
+
+#itemCarrousel-4{
+    background-color: rgb(112, 50, 226);
+	border-radius: 30px;
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: rgb(0, 0, 0);
+}
+
+.contenedor-texto h1 {
+	color: rgb(0, 0, 0);
+
+	font-size: 8rem;
+	font-weight: bold;
+}
+
+.contenido {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 900px;
+	background-color: #961010;
 }
