@@ -11,26 +11,42 @@
 	<link rel="stylesheet" type="text/css" href="../css/contacto.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
-	<title>Estudio Fotgráfico</title>
+	<script type='text/javascript'
+		src='https://www.bing.com/api/maps/mapcontrol?key=AryB22uQp_UX2HH8uvsBIeFuCn2MF0Db0qNpWJcYD0wQcpFxYOUD4bgWlh6JOlKc'></script>
+	<script type='text/javascript'>
+		var map;
+		function GetMap() {
+			map = new Microsoft.Maps.Map('#myMap', {
+				credentials: 'AryB22uQp_UX2HH8uvsBIeFuCn2MF0Db0qNpWJcYD0wQcpFxYOUD4bgWlh6JOlKc',
+				center: new Microsoft.Maps.Location(-28.5372, -57.1714),
+				zoom: 12,
+			});
+		}
+	</script>
+	<script src="../js/validar.js"></script>
+
+	<title>EstudioFot</title>
 </head>
 
-<body>
+<body onload='GetMap()'>
 
 	<header>
 		<a href="home.html">
-			<h1>EstudioFot</h1>
+			<p>EstudioFot</p>
 		</a>
 		<nav>
 			<a href="home.html">Home</a>
 			<a href="servicios.html">Servicios</a>
 			<a href="galeria.html">Galería</a>
 			<a href="contacto.html">Contáctenos</a>
-			<a href="https://www.instagram.com/"> <img src="../.img/instagram.svg" alt="instagram"></a>
-			<a href="https://es-la.facebook.com/"> <img src="../.img/facebook.svg" alt="facebook"></a>
-			<a href="https://www.linkedin.com/"> <img src="../.img/linkedin..svg" alt="linkedin"></a>
+			<a href="https://www.instagram.com/" target="_blank"> <img src="../.img/instagram.svg" alt="instagram"></a>
+			<a href="https://es-la.facebook.com/" target="_blank"> <img src="../.img/facebook.svg" alt="facebook"></a>
+			<a href="https://www.linkedin.com/" target="_blank"> <img src="../.img/linkedin.svg" alt="linkedin"></a>
 		</nav>
 	</header>
 
@@ -46,12 +62,17 @@
 			<h2>CONTACTO</h2>
 			<p>Nuestras oficinas se encuentran ubicadas a las afueras de la provincia de Corrientes, lugar estratégico a
 				la hora de paisajes para realizar sesiones fotográficas. </p>
-			<form id="formulario" method="post">
+			<form id="myForm" onsubmit="return validateForm()">
 				<div class="contenedor-input">
-					<input class="input-normal" placeholder="Nombre completo *" type="text" id="nombre" name="nombre">
-					<input class="input-normal" placeholder="Email *" type="email" id="correo" name="correo">
+					<input class="input-normal" placeholder="Nombre completo *" type="text" id="name" name="name">
+
+					<input class="input-normal" placeholder="Email *" type="email" id="email" name="email">
+					<span id="name-error" class="error"></span>
+					<span id="email-error" class="error"></span>
+					<input class="input-normal" placeholder="Teléfono *" type="text" id="phone" name="phone">
 					<input class="input-normal" placeholder="Empresa" type="text" id="empresa" name="empresa">
-					<input class="input-normal" placeholder="Teléfono *" type="text" id="tel" name="tel">
+			
+					<span id="phone-error" class="error"></span>
 				</div>
 
 				<textarea class="mensaje" placeholder="Tu mensaje" id="mensaje" name="mensaje"></textarea>
@@ -60,7 +81,28 @@
 			</form>
 		</div>
 		<div class="item">
-			<h1>Parte 2</h1>
+			<div id='myMap' class="mapa"></div>
+			<div class="texto-mapa">
+				<p>Colonia Carlos Pellegrini, Corrientes</p>
+			</div>
+			<div class="divisor"></div>
+			<div class="cont-datos">
+				<div class="cont-datos-info">
+					<div id="my-icon-phone" class="material-symbols-outlined">call</div>
+					<div class="cont-datos-info-tel">
+						<h2>Teléfono</h2>
+						<h3>(053) 5681-423</h3>
+					</div>
+				</div>
+				<div class="cont-datos-info">
+					<div id="my-icon-mail" class="material-symbols-outlined"> mail </div>
+					<div class="cont-datos-info-mail">
+						<h2>Mail</h2>
+						<h3>info@estudiofot.com</h3>
+					</div>
+				</div>
+			</div>
+			<div class="divisor"></div>
 		</div>
 	</div>
 
@@ -69,12 +111,17 @@
 
 		<p>EstudioFot © 2023 — Todos los derechos reservados.</p>
 		<div>
-			<a href="https://www.instagram.com/"> <img src="../.img/instagram.svg" alt="instagram"></a>
-			<a href="https://es-la.facebook.com/"> <img src="../.img/facebook-white.svg" alt="facebook"></a>
-			<a href="https://www.linkedin.com/"> <img src="../.img/linkedin-white.svg" alt="linkedin"></a>
+			<a href="https://www.instagram.com/" target="_blank"> <img src="../.img/instagram-white.svg"
+					alt="instagram"></a>
+			<a href="https://es-la.facebook.com/" target="_blank"> <img src="../.img/facebook-white.svg"
+					alt="facebook"></a>
+			<a href="https://www.linkedin.com/" target="_blank"> <img src="../.img/linkedin-white.svg"
+					alt="linkedin"></a>
 		</div>
 	</footer>
 
 </body>
+
+
 
 </html>

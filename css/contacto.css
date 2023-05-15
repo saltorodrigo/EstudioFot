@@ -1,4 +1,3 @@
-
 .container {
 	position: relative;
 	width: 100%;
@@ -40,12 +39,14 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: 900px;
+	height: 90%;
 	background-color: #f2f2f2;
+	padding-bottom: 3%;
 }
 
 .item {
 	margin: auto;
+	margin-top: 100px;
 	width: 40%;
 }
 
@@ -54,13 +55,14 @@
 }
 
 .item p {
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 .input-normal {
 
 	width: 45%;
-	margin-bottom: 5%;
+	margin-top: 5%;
+	margin-bottom: 0;
 	border: none;
 	outline: none;
 	background-color: transparent;
@@ -87,12 +89,13 @@
 
 	width: 100%;
 	margin-bottom: 5%;
+	margin-top: 5%;
 	border: none;
 	outline: none;
 	background-color: transparent;
 	border-bottom: 1px solid #b3b3b3;
 	font-size: large;
-	height: 200px;
+	height: 250px;
 	transition: border-bottom 0.3s linear;
 
 }
@@ -102,7 +105,7 @@
 }
 
 .input-btn {
-	border:none;
+	border: none;
 	background-color: rgba(0, 0, 255, 0.5);
 	color: #fff;
 	padding: 15px 30px;
@@ -110,4 +113,90 @@
 	font-weight: 600;
 	border-radius: 5px;
 	cursor: pointer;
+}
+
+.mapa {
+	/* background-color: rgb(212, 212, 212); */
+	width: 80%;
+	height: 300px;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.texto-mapa {
+	display: flex;
+	background-color: rgba(0, 0, 255, 0.5);
+	width: 80%;
+	height: 40px;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 40px;
+	color: #fff;
+}
+
+.texto-mapa p {
+	margin: auto;
+}
+
+.divisor {
+	background-color: rgba(0, 0, 255, 0.5);
+	height: 2px;
+	width: 80%;
+	margin: auto;
+}
+
+.cont-datos {
+	display: flex;
+}
+
+.cont-datos {
+	width: 80%;
+	height: 180px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: start
+}
+
+.cont-datos h2 {
+	margin: 0;
+}
+
+.cont-datos h3 {
+	font-weight: normal;
+	color: #8a8a8a;
+	text-decoration: none;
+
+}
+
+
+.cont-datos-info {
+	display: flex;
+	flex-direction: row;
+
+
+}
+
+#my-icon-mail {
+	font-size: 40px;
+	color: rgba(0, 0, 255, 0.5);
+	margin-right: 30px;
+
+}
+
+#my-icon-phone {
+	font-size: 40px;
+	color: rgba(0, 0, 255, 0.5);
+	margin-right: 30px;
+}
+
+.error {
+	color: red;
+	width: 45%;
+	margin-bottom: 10px;
 }
