@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/galeria.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -32,16 +33,92 @@
 		</nav>
 	</header>
 
-	<h2>Esta es la galería</h2>
-	<footer>
+	<div class="container">
+		<div class="blue-layer"></div>
+		<div class="contenedor-texto">
+			<h1>GALERÍA</h1>
+		</div>
+	</div>
 
+	<div class="gallery">
+
+		<div class="photo">
+		  <img src='../.img/gal1.jpg'alt="Foto 1" onclick="openModal(this)">
+		  
+		</div>
+		<div class="photo">
+		  <img src='../.img/gal2.jpg' alt="Foto 2" onclick="openModal(this)">
+		  
+		</div>
+		<div class="photo">
+		  <img src='../.img/gal3.jpg' alt="Foto 3" onclick="openModal(this)">
+		
+		</div>
+		<div class="photo">
+			<img src='../.img/gal4.jpg'alt="Foto 1" onclick="openModal(this)">
+	
+		  </div>
+		  <div class="photo">
+			<img src='../.img/gal5.jpg' alt="Foto 2" onclick="openModal(this)">
+			
+		  </div>
+		  <div class="photo">
+			<img src='../.img/gal6.jpg' alt="Foto 3" onclick="openModal(this)">
+	
+		  </div>
+		  <div class="photo">
+			<img src='../.img/gal7.jpg'alt="Foto 1" onclick="openModal(this)">
+		
+		  </div>
+		  <div class="photo">
+			<img src='../.img/gal8.jpg' alt="Foto 2" onclick="openModal(this)">
+		
+		  </div>
+		  <div class="photo">
+			<img src='../.img/BURGA.jpg' alt="Foto 3" onclick="openModal(this)">
+	
+		  </div>
+		  <div class="photo">
+			<img src='../.img/SHOW BANDA.jpg' alt="Foto 3" onclick="openModal(this)">
+			
+		  </div>
+		  <div class="photo">
+			<img src='../.img/gal9.jpg' alt="Foto 3" onclick="openModal(this)">
+	
+		  </div>
+		  <div class="photo">
+			<img src='../.img/gal10.jpg' alt="Foto 3" onclick="openModal(this)">
+
+		  </div>
+
+
+	  </div>
+
+	
+	  <div id="modal" class="modal">
+		<span class="close" onclick="closeModal()">&times;</span>
+		<img id="modalImage" src="" alt="Ampliación de Foto">
+	  </div>
+	
+	  <script src="../js/script.js"></script>
+
+
+
+	<footer>
 		<p>EstudioFot © 2023 — Todos los derechos reservados.</p>
 		<div>
-			<a href="https://www.instagram.com/" target="_blank"> <img src="../.img/instagram.svg" alt="instagram"></a>
-			<a href="https://es-la.facebook.com/" target="_blank"> <img src="../.img/facebook-white.svg" alt="facebook"></a>
-			<a href="https://www.linkedin.com/" target="_blank"> <img src="../.img/linkedin-white.svg" alt="linkedin"></a>
+			<a href="https://www.instagram.com/" target="_blank"> <img src="../.img/instagram-white.svg"
+					alt="instagram"></a>
+			<a href="https://es-la.facebook.com/" target="_blank"> <img src="../.img/facebook-white.svg"
+					alt="facebook"></a>
+			<a href="https://www.linkedin.com/" target="_blank"> <img src="../.img/linkedin-white.svg"
+					alt="linkedin"></a>
 		</div>
 	</footer>
+
+
+
+
 </body>
 
 </html>

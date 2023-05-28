@@ -200,3 +200,127 @@
 	width: 45%;
 	margin-bottom: 10px;
 }
+
+
+@media only screen and (max-width: 1024px) {
+
+	.container {
+		height: 300px;
+	}
+
+	.contenedor-texto h1 {
+		font-size: 4rem;
+	}
+
+	.contenido {
+		flex-direction: column;
+	}
+
+	.item {
+		width: 70%;
+		margin-top: 50px;
+	}
+
+	.mensaje {
+		height: 150px;
+	}
+
+	.texto-mapa {
+		display: flex;
+		background-color: rgba(0, 0, 255, 0.5);
+		width: 80%;
+		height: 40px;
+		margin: auto;
+		margin-top: 0;
+		margin-bottom: 40px;
+		color: #fff;
+	}
+	
+	.texto-mapa p {
+		margin: auto;
+	}
+
+	.mapa {
+		width: 80%;
+		height: 200px;
+	}
+  
+	.navbar {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  padding: 10px;
+	}
+  
+	.navbar-toggle {
+	  display: block;
+	  cursor: pointer;
+	  padding: 10px;
+	  background-color: transparent;
+	  border: none;
+	}
+  
+	.navbar-toggle span {
+	  display: block;
+	  width: 25px;
+	  height: 3px;
+	  background-color: #000;
+	  margin-bottom: 5px;
+	}
+  
+	.navbar-menu {
+	  display: none;
+	}
+  
+	.navbar-menu.active {
+	  display: block;
+	}
+  }
+  
+  /* Estilos para dispositivos pequeños (celulares) */
+  @media only screen and (max-width: 480px) {
+	.container {
+		height: 200px;
+	}
+
+	.contenedor-texto h1 {
+		font-size: 3rem;
+	}
+
+	.item {
+		width: 90%;
+		margin-top: 30px;
+	}
+
+	.mensaje {
+		height: 100px;
+	}
+
+	.texto-mapa {
+		display: flex;
+		background-color: rgba(0, 0, 255, 0.5);
+		width: 80%;
+		height: 40px;
+		margin: auto;
+		margin-top: 0;
+		margin-bottom: 40px;
+		color: #fff;
+	}
+	
+	.texto-mapa p {
+		margin: auto;
+	}
+
+	.mapa {
+		width: 80%;
+		height: 150px;
+	}
+  }
+  
+  /* Estilos para el footer */
+  /* footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+  }
+   */

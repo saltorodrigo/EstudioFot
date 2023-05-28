@@ -29,24 +29,36 @@
 		}
 	</script>
 	<script src="../js/validar.js"></script>
+	<script src="../js/toggleMenu.js"></script>
 
 	<title>EstudioFot</title>
 </head>
 
 <body onload='GetMap()'>
 
+
+
 	<header>
 		<a href="home.html">
 			<p>EstudioFot</p>
 		</a>
 		<nav>
-			<a href="home.html">Home</a>
-			<a href="servicios.html">Servicios</a>
-			<a href="galeria.html">Galería</a>
-			<a href="contacto.html">Contáctenos</a>
-			<a href="https://www.instagram.com/" target="_blank"> <img src="../.img/instagram.svg" alt="instagram"></a>
-			<a href="https://es-la.facebook.com/" target="_blank"> <img src="../.img/facebook.svg" alt="facebook"></a>
-			<a href="https://www.linkedin.com/" target="_blank"> <img src="../.img/linkedin.svg" alt="linkedin"></a>
+			<button class="navbar-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+			<!-- <div class="navbar-menu" id="navbar-menu"> -->
+				
+					
+					<a href="home.html">Home</a>
+					<a href="servicios.html">Servicios</a>
+					<a href="galeria.html">Galería</a>
+					<a href="contacto.html">Contáctenos</a>
+					<a href="https://www.instagram.com/" target="_blank"> <img src="../.img/instagram.svg"
+							alt="instagram"></a>
+					<a href="https://es-la.facebook.com/" target="_blank"> <img src="../.img/facebook.svg"
+							alt="facebook"></a>
+					<a href="https://www.linkedin.com/" target="_blank"> <img src="../.img/linkedin.svg"
+							alt="linkedin"></a>
+				
+			<!-- </div> -->
 		</nav>
 	</header>
 
@@ -64,14 +76,14 @@
 				la hora de paisajes para realizar sesiones fotográficas. </p>
 			<form id="myForm" onsubmit="return validateForm()">
 				<div class="contenedor-input">
-					<input class="input-normal" placeholder="Nombre completo *" type="text" id="name" name="name">
+					<input class="input-normal" placeholder="Nombre *" type="text" id="name" name="name">
 
 					<input class="input-normal" placeholder="Email *" type="email" id="email" name="email">
 					<span id="name-error" class="error"></span>
 					<span id="email-error" class="error"></span>
 					<input class="input-normal" placeholder="Teléfono *" type="text" id="phone" name="phone">
 					<input class="input-normal" placeholder="Empresa" type="text" id="empresa" name="empresa">
-			
+
 					<span id="phone-error" class="error"></span>
 				</div>
 
