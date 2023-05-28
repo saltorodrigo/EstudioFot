@@ -1,13 +1,13 @@
-
 .container {
 	position: relative;
 	width: 100%;
 	height: 300px;
 	top: 0;
 	left: 0;
-	background-image: url('C:\Users\Emanuel Salto\Documents\02-FACULTAD\Codo a Codo\TPO\EstudioFot\.img\vecteezy_speed-motion-car-on-road-at-night-with-long-exposure_20495441_64.jpg');
+	background-image: url('../.img/vecteezy_speed-motion-car-on-road-at-night-with-long-exposure_20495441_64.jpg');
 	background-position: center;
 	background-size: cover;
+	
 }
 
 .blue-layer {
@@ -17,23 +17,25 @@
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 255, 0.5);
+	color: #fff;
 }
 
 .contenedor-texto {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	color: #fff;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	z-index: 1;
 }
 
-*{
+/* *{
     margin:0;
     padding: 0px 0px 0px 0px;
     box-sizing: border-box;
 	
-}
+} */
 
 .carrousel{
     /*width: 100%;
@@ -64,18 +66,58 @@
     top: calc(50% - 510px/2 + 163px);*/
 }
 	
-header a {
+/* header a {
 	float: left;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 16px;
-}
+} */
 
 .itemCarrouselTarjeta{
+	
     width: 100%;
     height: 100%;	
+	margin-top: 20px;
+	align-items: center;
+	color: #fff;
+	font-size: xx-large;
+	text-align: center;
+}
+
+.Tarjeta-lower{
+	display: flex;
+    position: absolute;
+	font-size: medium;
+	justify-items: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	padding: auto;
+	width: 60%;
+    height: 50%;
+	width: 100%;
+    height: 100%;
+	align-items: center;	
+	/*justify-content: space-between;*/
+}
+
+.Texto-tarjeta{
+    /* position: relative; */
+	display: flex;
+	width: 60%;
+    height: 50%;
+	/* margin: 20px 20px 20px 20px ; */
+	text-align: center;
+	padding: auto;
+	align-items: center;
+    /* top: 50%;
+    bottom: 0;
+	width: 50%;
+    height: 50%;
+	justify-content: space-between;
+	align-items: center;	 */
+		
 }
 
 .itemCarrouselArrows{
@@ -90,14 +132,19 @@ header a {
     align-items: center;
     justify-content: space-between;
     padding: 20px; 
+	margin:0;
+    /* padding: 0px 0px 0px 0px; */
+    box-sizing: border-box;
 }
+
+
 
 .itemCarrouselArrows > i:hover {
     cursor: pointer;
 }
 
 #itemCarrousel-1{
-    background-color: rgb(226, 50, 50);
+    background-color: rgb(0, 0, 0);
 	/*width: 100%;
     height: 100%;*/
 	/*padding: 20%;*/
@@ -107,17 +154,17 @@ header a {
 }
 
 #itemCarrousel-2{
-    background-color: rgb(50, 200, 226);
+    background-color: rgb(0, 0, 0);
 	border-radius: 30px;
 }
 
 #itemCarrousel-3{
-    background-color: rgb(200, 226, 50);
+    background-color: rgb(0, 0, 0);
 	border-radius: 30px;
 }
 
 #itemCarrousel-4{
-    background-color: rgb(112, 50, 226);
+    background-color: rgb(0, 0, 0);
 	border-radius: 30px;
 }
 
@@ -134,7 +181,10 @@ header a {
 }
 
 .itemCarrouselArrows > a > i{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+	margin:0;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
 }
 
 .contenedor-texto h1 {
@@ -150,5 +200,5 @@ header a {
 	justify-content: center;
 	align-items: center;
 	height: 900px;
-	background-color: #961010;
+	background-color: #961010;
 }
