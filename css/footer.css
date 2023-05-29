@@ -13,3 +13,19 @@ footer a img{
     margin-left: 10px;
     color: #fff;
 }
+
+@media only screen and (max-width: 480px) {
+
+   footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+   }
+
+   footer p{
+    width: 50%;
+   }
+
+}
